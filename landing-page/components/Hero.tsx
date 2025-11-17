@@ -54,12 +54,9 @@ export default function Hero() {
             href="https://github.com/githuh2/treavari_251115"
             target="_blank"
             rel="noopener noreferrer"
-            className="group px-8 py-4 bg-neon-green text-black font-semibold rounded-lg hover:bg-neon-green/90 transition-all hover:scale-105 hover:shadow-lg hover:shadow-neon-green/50"
+            className="px-8 py-4 bg-neon-green text-black font-semibold rounded-lg hover:bg-neon-green/90 transition-all hover:scale-105 hover:shadow-lg hover:shadow-neon-green/50"
           >
-            <div className="flex flex-col items-center gap-1">
-              <span>무료로 시작하기</span>
-              <span className="text-xs opacity-80">GitHub에서 바로 사용</span>
-            </div>
+            무료로 시작하기
           </a>
           <a
             href="#how-it-works"
