@@ -22,8 +22,8 @@ const plans = [
   {
     name: '웹 UI + AI 검증',
     status: '곧 출시 예정',
-    price: '₩100,000',
-    period: '/월 (예상)',
+    price: 'TBD',
+    period: '',
     description: '웹 인터페이스와 AI 코드 검증 기능',
     features: [
       '기본 기능 포함',
@@ -34,14 +34,15 @@ const plans = [
       '프로젝트 관리',
     ],
     color: 'neon-blue',
-    cta: '알림 받기',
-    link: '#waitlist',
+    cta: '개발 예정',
+    link: '#roadmap',
     popular: false,
   },
   {
     name: 'Enterprise',
     status: '추가 오픈 예정',
-    price: '문의',
+    price: 'TBD',
+    period: '',
     description: 'ChartDB 시각화와 Git 완전 통합',
     features: [
       '모든 기본 기능',
@@ -52,8 +53,8 @@ const plans = [
       '전담 지원',
     ],
     color: 'neon-pink',
-    cta: '관심 등록',
-    link: '#enterprise',
+    cta: '개발 예정',
+    link: '#roadmap',
     popular: false,
   },
 ];
@@ -66,11 +67,11 @@ export default function Pricing() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="bg-gradient-to-r from-neon-green to-neon-pink bg-clip-text text-transparent">
-              로드맵 & 가격
+              로드맵
             </span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            무료 오픈소스로 시작하여 점진적으로 기능 확장
+            현재는 무료 CLI 도구, 향후 웹 UI와 추가 기능 개발 예정
           </p>
         </div>
 

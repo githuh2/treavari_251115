@@ -13,7 +13,7 @@ export default function Hero() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-900/50 border border-neon-green/30 mb-8">
           <span className="w-2 h-2 bg-neon-green rounded-full animate-pulse"></span>
-          <span className="text-sm text-gray-300">무료 오픈소스</span>
+          <span className="text-sm text-gray-300">오픈소스</span>
         </div>
 
         {/* Main headline */}
