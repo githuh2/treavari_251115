@@ -2,9 +2,8 @@
 
 const plans = [
   {
-    phase: 'Phase 1',
     name: 'CLI 오픈소스',
-    status: '현재',
+    status: '현재 이용 가능',
     price: '무료',
     description: 'GitHub에서 바로 사용 가능한 CLI 도구',
     features: [
@@ -21,14 +20,13 @@ const plans = [
     popular: true,
   },
   {
-    phase: 'Phase 2',
     name: '웹 UI + AI 검증',
-    status: '2-3개월 후',
+    status: '곧 출시 예정',
     price: '₩100,000',
     period: '/월 (예상)',
     description: '웹 인터페이스와 AI 코드 검증 기능',
     features: [
-      'Phase 1 모든 기능',
+      '기본 기능 포함',
       '웹 UI (파일 업로드)',
       '간접 영향도 분석 (2단계)',
       'AI 코드 패턴 검증',
@@ -41,13 +39,12 @@ const plans = [
     popular: false,
   },
   {
-    phase: 'Phase 3',
     name: 'Enterprise',
-    status: '6개월+ 후',
+    status: '추가 오픈 예정',
     price: '문의',
     description: 'ChartDB 시각화와 Git 완전 통합',
     features: [
-      'Phase 1-2 모든 기능',
+      '모든 기본 기능',
       'ChartDB ERD 시각화',
       'Git/GitHub 연동',
       'PR 자동 리포트',
@@ -96,11 +93,6 @@ export default function Pricing() {
                   </div>
                 </div>
               )}
-
-              {/* Phase badge */}
-              <div className="inline-block px-3 py-1 rounded-full bg-gray-800 text-gray-400 text-xs font-semibold mb-4">
-                {plan.phase}
-              </div>
 
               {/* Plan name */}
               <h3 className="text-2xl font-bold mb-2 text-white">{plan.name}</h3>
@@ -153,15 +145,15 @@ export default function Pricing() {
           <h3 className="text-2xl font-bold mb-6 text-white">자주 묻는 질문</h3>
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <h4 className="font-semibold text-neon-green mb-2">Phase 1은 정말 무료인가요?</h4>
+              <h4 className="font-semibold text-neon-green mb-2">정말 무료인가요?</h4>
               <p className="text-gray-400">
                 네, CLI 도구는 MIT 라이선스 오픈소스로 완전 무료입니다. 상업적 사용도 가능합니다.
               </p>
             </div>
             <div>
-              <h4 className="font-semibold text-neon-green mb-2">Phase 2는 언제 출시되나요?</h4>
+              <h4 className="font-semibold text-neon-green mb-2">웹 UI는 언제 출시되나요?</h4>
               <p className="text-gray-400">
-                Phase 1 사용자 검증 완료 후 2-3개월 내 베타 출시 예정입니다.
+                사용자 피드백을 받아 개선 후 곧 출시 예정입니다. GitHub에서 이슈를 통해 의견을 남겨주세요.
               </p>
             </div>
             <div>

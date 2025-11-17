@@ -13,25 +13,23 @@ export default function Hero() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-900/50 border border-neon-green/30 mb-8">
           <span className="w-2 h-2 bg-neon-green rounded-full animate-pulse"></span>
-          <span className="text-sm text-gray-300">Phase 1 MVP - 오픈소스</span>
+          <span className="text-sm text-gray-300">무료 오픈소스</span>
         </div>
 
         {/* Main headline */}
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-          <span className="text-white">바이브코딩 시대,</span>
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+          <span className="text-white">꼬인 프로젝트,</span>
           <br />
           <span className="bg-gradient-to-r from-neon-green to-neon-blue bg-clip-text text-transparent glow-text">
-            ERD 기반 영향도 분석
+            이제 정리할 시간입니다
           </span>
-          <br />
-          <span className="text-white">으로 5분 만에 정확한 견적을</span>
         </h1>
 
         {/* Subtitle */}
-        <p className="text-xl md:text-2xl text-gray-400 mb-12 max-w-3xl mx-auto">
-          30분 걸리던 영향 테이블 추적을 <span className="text-neon-green font-semibold">5분으로 단축</span>
+        <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-3xl mx-auto">
+          ERD 기반 영향도 분석으로 변경사항을 <span className="text-neon-green font-semibold">5분만에 파악</span>하고,
           <br />
-          SI 팀장의 재계약률을 높이는 ERD Impact Analyzer
+          프로젝트를 다시 제어하세요
         </p>
 
         {/* Stats */}
@@ -41,8 +39,8 @@ export default function Hero() {
             <div className="text-gray-400 text-sm">시간 단축</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-neon-pink mb-2">90%+</div>
-            <div className="text-gray-400 text-sm">분석 정확도</div>
+            <div className="text-4xl font-bold text-neon-pink mb-2">CLI</div>
+            <div className="text-gray-400 text-sm">간편한 도구</div>
           </div>
           <div className="text-center">
             <div className="text-4xl font-bold text-neon-blue mb-2">5분</div>
@@ -56,9 +54,12 @@ export default function Hero() {
             href="https://github.com/githuh2/treavari_251115"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 bg-neon-green text-black font-semibold rounded-lg hover:bg-neon-green/90 transition-all hover:scale-105 hover:shadow-lg hover:shadow-neon-green/50"
+            className="group px-8 py-4 bg-neon-green text-black font-semibold rounded-lg hover:bg-neon-green/90 transition-all hover:scale-105 hover:shadow-lg hover:shadow-neon-green/50"
           >
-            GitHub에서 보기
+            <div className="flex flex-col items-center gap-1">
+              <span>무료로 시작하기</span>
+              <span className="text-xs opacity-80">GitHub에서 바로 사용</span>
+            </div>
           </a>
           <a
             href="#how-it-works"

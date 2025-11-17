@@ -12,7 +12,7 @@ const features = [
     icon: '🔍',
     title: '영향도 분석',
     description: '외래키 관계를 추적하여 변경 시 직접 영향받는 테이블을 탐지합니다.',
-    highlight: '90%+ 정확도',
+    highlight: '자동 추적',
     color: 'neon-blue',
   },
   {
@@ -25,8 +25,8 @@ const features = [
   {
     icon: '📊',
     title: '리포트 생성',
-    description: 'Jira, Slack 등에 바로 공유 가능한 상세한 텍스트 리포트를 생성합니다.',
-    highlight: '복사 붙여넣기 가능',
+    description: 'API와 GitHub 연동을 통해 자동으로 리포트를 공유하거나 Jira, Slack에 복사할 수 있습니다.',
+    highlight: 'API 연동 지원',
     color: 'neon-green',
   },
 ];
@@ -106,7 +106,48 @@ export default function Features() {
               <div className="flex items-start gap-3">
                 <span className="text-neon-green mt-1">✅</span>
                 <p className="text-white font-semibold">
-                  ERD Impact Analyzer로 5분 만에 정확한 영향도 파악 → 근거 있는 견적 → 재계약 성공
+                  ERD Impact Analyzer로 5분 만에 정확한 영향도 파악 → 프로젝트 제어권 회복
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Target customers */}
+        <div className="mt-16 p-8 rounded-xl bg-gradient-to-br from-neon-blue/10 to-neon-green/10 border border-neon-blue/30">
+          <h3 className="text-2xl font-bold mb-6 text-center">
+            <span className="bg-gradient-to-r from-neon-blue to-neon-green bg-clip-text text-transparent">
+              특히 이런 분들께 추천합니다
+            </span>
+          </h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="p-6 rounded-lg bg-gray-900/50 border border-gray-800 hover:border-neon-green/50 transition-colors">
+              <div className="flex flex-col gap-3">
+                <div className="text-4xl">👔</div>
+                <h4 className="font-bold text-neon-green text-lg">SI 개발팀장</h4>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  <strong className="text-white">고객사와의 의사소통</strong>이 한층 명확해집니다.
+                  근거 있는 영향도 리포트로 재계약률 향상과 신뢰 확보
+                </p>
+              </div>
+            </div>
+            <div className="p-6 rounded-lg bg-gray-900/50 border border-gray-800 hover:border-neon-blue/50 transition-colors">
+              <div className="flex flex-col gap-3">
+                <div className="text-4xl">🚀</div>
+                <h4 className="font-bold text-neon-blue text-lg">자체개발 스타트업</h4>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  <strong className="text-white">프로젝트 관리</strong>가 체계적으로 바뀝니다.
+                  빠른 기능 추가 판단과 기술부채 최소화
+                </p>
+              </div>
+            </div>
+            <div className="p-6 rounded-lg bg-gray-900/50 border border-gray-800 hover:border-neon-pink/50 transition-colors">
+              <div className="flex flex-col gap-3">
+                <div className="text-4xl">🤖</div>
+                <h4 className="font-bold text-neon-pink text-lg">AI 개발 환경</h4>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  <strong className="text-white">AI와 자연스럽게 연동</strong>됩니다.
+                  Cursor, GitHub Copilot 등 AI 코딩 도구와 함께 사용
                 </p>
               </div>
             </div>
